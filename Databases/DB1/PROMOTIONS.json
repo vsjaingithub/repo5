@@ -1,0 +1,10 @@
+{
+  "physicalTable" : {
+    "name" : "PROMOTIONS",
+    "physicalColumns" : [ {
+      "name" : "PROMO_ID",
+      "dataType" : "NUMBER",
+      "nullable" : false
+    } ]
+  }
+}

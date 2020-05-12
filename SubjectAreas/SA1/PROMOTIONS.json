@@ -1,0 +1,10 @@
+{
+  "presentationTable" : {
+    "name" : "PROMOTIONS",
+    "presentationColumns" : [ {
+      "useLogicalName" : true,
+      "name" : "PROMO_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM1.PROMOTIONS.PROMO_ID"
+    } ]
+  }
+}

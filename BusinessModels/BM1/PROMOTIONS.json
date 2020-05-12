@@ -1,0 +1,31 @@
+{
+  "logicalTable" : {
+    "name" : "PROMOTIONS",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "PROMO_ID",
+      "dataType" : "NUMBER",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "PROMOTIONS",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB1.PROMOTIONS.PROMO_ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "PROMOTIONS",
+      "disable" : false,
+      "tableMapping" : {
+        "allowUnmappedTables" : true,
+        "tables" : [ "physicalTable:DB1.PROMOTIONS" ]
+      },
+      "combineWithOtherFragments" : true,
+      "distinctValues" : true
+    } ]
+  }
+}

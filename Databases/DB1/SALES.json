@@ -1,0 +1,10 @@
+{
+  "physicalTable" : {
+    "name" : "SALES",
+    "physicalColumns" : [ {
+      "name" : "SALE_ID",
+      "dataType" : "NUMBER",
+      "nullable" : false
+    } ]
+  }
+}

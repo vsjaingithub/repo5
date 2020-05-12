@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "SA1",
+    "sourceBusinessModel" : "businessModel:BM1",
+    "exportLogicalKeys" : false,
+    "tableOrder" : [ {
+      "name" : "presentationTable:SA1.SALES"
+    }, {
+      "name" : "presentationTable:SA1.PROMOTIONS"
+    } ],
+    "localization" : { }
+  }
+}

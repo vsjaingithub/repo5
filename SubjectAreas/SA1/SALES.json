@@ -1,0 +1,10 @@
+{
+  "presentationTable" : {
+    "name" : "SALES",
+    "presentationColumns" : [ {
+      "useLogicalName" : true,
+      "name" : "SALE_ID",
+      "sourceLogicalColumn" : "logicalColumn:BM1.SALES.SALE_ID"
+    } ]
+  }
+}

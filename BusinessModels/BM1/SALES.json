@@ -1,0 +1,31 @@
+{
+  "logicalTable" : {
+    "name" : "SALES",
+    "type" : "FACT",
+    "logicalColumns" : [ {
+      "name" : "SALE_ID",
+      "dataType" : "NUMBER",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "SALES",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:DB1.SALES.SALE_ID" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "SALES",
+      "disable" : false,
+      "tableMapping" : {
+        "allowUnmappedTables" : true,
+        "tables" : [ "physicalTable:DB1.SALES" ]
+      },
+      "combineWithOtherFragments" : true,
+      "distinctValues" : true
+    } ]
+  }
+}

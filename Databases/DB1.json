@@ -1,0 +1,15 @@
+{
+  "database" : {
+    "name" : "DB1",
+    "joins" : [ {
+      "type" : "SIMPLE",
+      "name" : "NewJoin_1",
+      "leftTable" : "physicalTable:DB1.PROMOTIONS",
+      "rightTable" : "physicalTable:DB1.SALES",
+      "joinConditions" : [ {
+        "leftColumn" : "PROMO_ID",
+        "rightColumn" : "SALE_ID"
+      } ]
+    } ]
+  }
+}

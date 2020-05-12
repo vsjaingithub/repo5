@@ -1,0 +1,14 @@
+{
+  "businessModel" : {
+    "name" : "BM1",
+    "disable" : false,
+    "joins" : [ {
+      "name" : "NewJoin_1",
+      "leftTable" : "logicalTable:BM1.SALES",
+      "rightTable" : "logicalTable:BM1.PROMOTIONS",
+      "type" : "INNER",
+      "cardinality" : "MANYTOONE",
+      "drivingTable" : "None"
+    } ]
+  }
+}
