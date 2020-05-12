@@ -1,6 +1,7 @@
 {
   "businessModel" : {
     "name" : "BM1",
+    "description" : "asdasd",
     "disable" : false,
     "joins" : [ {
       "name" : "NewJoin_1",
